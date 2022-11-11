@@ -5,7 +5,8 @@ function Home({title}) {
     return (
         <div>
             <br/>
-            <h1>{title}</h1>
+            <h2>{title}</h2>
+            <p>This is our course assignment project, where we learn to use both backend and frontend programming.</p>
             <Outlet/>
         </div>
     )

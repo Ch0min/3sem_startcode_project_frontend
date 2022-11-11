@@ -9,7 +9,6 @@ import userfacade from "./facades/userFacade.js";
 import Header from "./components/Header.jsx";
 import Home from "./components/Home.jsx";
 import Jokes from "./components/Jokes.jsx";
-import WelcomeMessage from "./components/WelcomeMessage.jsx";
 import CreateUser from "./components/CreateUser.jsx";
 import CreateUserConfirmation from "./components/CreateUserConfirmation.jsx";
 import AdminPanel from "./components/AdminPanel.jsx";
@@ -31,7 +30,6 @@ function App() {
                 <Route path="jokes" element={<Jokes facade={jokefacade}/>}/>
                 <Route path="adminpanel" element={<AdminPanel/>}/>
 
-                <Route path="welcomemessage" element={<WelcomeMessage/>}/>
                 <Route path="createuser" element={<CreateUser/>}/>
                 <Route path="createuserconfirmation" element={<CreateUserConfirmation/>}/>
                 <Route path="profile" element={<Profile/>}/>
