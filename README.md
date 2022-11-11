@@ -3,5 +3,5 @@ Made for CA2 and exam prep
 
 1. npm create vite@latest
 2. npm install
-4. npm install react router-dom
-5. (npm install bootstrap)
+3. npm install react-router (samt dom)
+4. (npm install bootstrap)
