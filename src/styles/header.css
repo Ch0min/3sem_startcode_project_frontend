@@ -4,13 +4,10 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.jokeText{
-
-}
 
 .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: #dedcdc;
     height: 65px;
 }
 
@@ -25,12 +22,12 @@ body {
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #b7b7b7;
     color: black;
 }
 
 .topnav a.active {
-    background-color: #2196F3;
+    background-color: #4585a0;
     color: white;
 }
 
@@ -38,10 +35,6 @@ body {
     float: right;
 }
 
-.topnav .show-username-container {
-    float: right;
-    margin-right: 15px;
-}
 
 .topnav input[type=text] {
     padding: 6px;
@@ -60,28 +53,32 @@ body {
     font-size: 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .topnav .logout-container button {
     float: right;
     padding: 4px 8px;
     margin-right: 17px;
-    background-color: #555;
+    background-color: #ee6060;
     color: white;
     font-size: 15px;
     border: none;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .topnav .profileIcon {
     float: right;
     padding: 22px 20px;
     margin-right: 17px;
-    background-color: #555;
+    background-color: #96bbc9;
     color: white;
     font-size: 15px;
     border: none;
     cursor: pointer;
+    border-radius: 6px;
+    width: 15%;
 }
 
 .topnav .create-user-container button {
@@ -96,7 +93,7 @@ body {
 }
 
 .topnav .login-container button:hover {
-    background-color: green;
+    background-color: #65a3a9;
 }
 
 @media screen and (max-width: 600px) {

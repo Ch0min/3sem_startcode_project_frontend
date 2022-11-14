@@ -19,8 +19,55 @@ img {
   height: 100px;
 }
 
-/* Table */
+/* Input types */
+input[type=text], select {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
+input[type=number], select {
+  width: 100%;
+  padding: 10px 14px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 20%;
+  background-color: #969696;
+  color: white;
+  padding: 12px 18px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #96bbc9;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f1efef;
+}
+
+/* Close Btn */
+.btn-close-white {
+  border-radius: 6px;
+  width: 10%;
+}
+
+/* Table */
 table, td {
   border: 1px solid #ddd;
   width: 500px;
@@ -31,7 +78,7 @@ th {
   padding-top: 12px;
   padding-bottom: 12px;
   text-align: center;
-  background-color: #0470aa;
+  background-color: #4585a0;
   color: white;
 }
 

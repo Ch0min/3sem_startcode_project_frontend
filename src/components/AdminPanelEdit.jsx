@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Select from 'react-select'
 import userfacade from "../facades/userFacade.js";
 
 const AdminPanelEdit = () => {
@@ -7,8 +8,7 @@ const AdminPanelEdit = () => {
     const [updatedUser, setUpdatedUser] = useState(init);
     const [hidden, setHidden] = useState(true)
 
-    const performUpdateUser = (evt) => {
-        evt.preventDefault();
+    const performUpdateUser = () => {
         updateUser(updatedUser.userName, updatedUser.userPass, updatedUser.role, updatedUser.id);
     }
 
@@ -28,12 +28,12 @@ const AdminPanelEdit = () => {
             return "Close"
     }
 
-
     return (
         <>
             <br/>
-            <button onClick={() => setHidden(s => !s)}>{btnText()}</button>
+            <button className="btn-close-white" onClick={() => setHidden(s => !s)}>{btnText()}</button>
             {!hidden ? <form onSubmit={performUpdateUser}>
+                <br/>
                 <label>ID: </label>
                 <input type="number" id="id" value={updatedUser.id} onChange={update}/>
                 <br/>
@@ -46,6 +46,7 @@ const AdminPanelEdit = () => {
                 <label>Role: </label>
                 <input type="text" id="role" value={updatedUser.role} onChange={update}/>
                 <br/>
+
                 <input type="submit" value="Update"/>
             </form> : null}
         </>

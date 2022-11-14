@@ -14,9 +14,9 @@ const AdminPanelDelete = (props) => {
     }
 
     return (
-        <>
+        <div className="btn-danger">
             <input type="submit" value="-" onClick={(e) => handleSubmitDelete(props.user.id, e)}/>
-        </>
+        </div>
     )
 };
 
